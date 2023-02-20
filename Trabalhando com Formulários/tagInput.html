@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Input e Seus tipos</title>
+</head>
+<body>
+    <h1>Tag Input e Seus tipos</h1>
+    <form>
+        <label>Text:</label><input type="text"><br>
+        <label>Número:</label><input type="number"><br>
+        <!--Para limitar o número-->
+        <label>Idade:</label><input type="number" min="0" max="99"><br>
+        <!--Passar número de 5 em 5-->
+        <label>Idade de 5 em 5:</label><input type="number" min="0" max="99" step="5"><br>
+
+        <!--Tipo Botão, mais temos a TAG button também-->
+        <label>Button:</label><input type="button" value="Enviar"><br>
+        <label>Range:</label><input type="range" ><br>
+        <label>Color:</label><input type="color" ><br>
+       
+        <label>E-mail:</label><input type="email" ><br>  <!--Para alidar se tem o @-->
+        <label>URL:</label><input type="url" ><br>   <!--Para validar se tem um https--->
+        <label>Date:</label><input type="date" ><br>  
+        <!--Campo Semana - Esoclhe a Semana do ano (no firefox não funciona)-->
+        <label>Week (Semana):</label><input type="week" ><br>  
+        <label>Month (mês):</label><input type="month" ><br>  
+        <label>Checkbox:</label><input type="checkbox"><input type="checkbox" ><br> 
+        <label>Radio:</label><input type="radio" name="aceita" ><input type="radio" name="aceita"><br>  
+
+        <label>Hidden:</label><input type="hidden" ><br> <!--Campo invisivel para o usuário-->
+        <label>File:</label><input type="file" multiple><br> <!--Aceita vários arquivos com multiple-->
+        <label>Search (Busca):</label><input type="search"><br> <!--Aparece um "X" no final e limpa o campo -->
+
+    
+    </form>
+    
+</body>
+</html>
