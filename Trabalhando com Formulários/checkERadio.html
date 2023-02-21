@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+
+<body>
+    <h1>Checkbox e Radio</h1> <br>
+    <hr>
+
+    <form method="post">
+        <h1>Você Selecionou: Pizza de Calabresa</h1><br>
+        <p>Quais Opcionais você deseja?</p>
+        <input type="checkbox" name="opcinal[]" value="queijo">+ Queijo<br>
+        <input type="checkbox" name="opcinal[]" value="calabresa">+ Calabresa<br>
+        <input type="checkbox" name="opcinal[]" value="cebola">+ Cebola<br>
+        <input type="checkbox" name="opcinal[]" value="azeitona">+ Azeitona<br>
+        <input type="checkbox" name="opcinal[]" value="azeitona" disabled>+ Oregano<br>
+
+        <!--Tem que usar [] no metodo POST, para enviar uma lista dos opcionais.-->
+
+        <p>Borda recheada?</p>
+        <input type="radio" name="SelecionarBorda" value="sim">Sim <br>
+        <input type="radio" name="SelecionarBorda" value="nao">Não<br>
+
+        <p>Bebida:</p>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="refrigerante">Refrigerante<br>
+        <input type="radio" name="bebida" value="agua">Água<br>
+        <input type="radio" name="bebida" value="nenhum">Nenhum<br><br>
+
+        <button type="submit">Enviar</button>
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
