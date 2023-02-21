@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilizando Tabela</title>
+    <style>
+
+        table{
+            border: solid 1px black;
+        }
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+        table tfoot td{
+            background-color: lightsalmon;
+        }
+        table tbody tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td{
+            background-color: #e9e9e9;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Estilizando Tabela</h1>
+    <!--Tab Row-->
+    <table width="250" align="center" cellspacing="0" cellpadding="5">
+       <caption>Tabela de Alunos</caption>
+
+        <thead>
+            <tr>
+                <th colspan="2">Minha tabela</th>
+                
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome:</th>
+                <th title="Idade do Aluno">Idade</th>
+            </tr>
+        </thead>
+       
+
+        <tbody>
+            <tr>
+                <td id="1">Nome1</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td id="2">Nome2</td>
+                <td>27</td>
+            </tr>
+            <tr>
+                <td id="3">Nome3</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td id="4">Nome4</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td id="5">Nome5</td>
+                <td>99</td>
+            </tr>
+            <tr>
+                <td id="6">Nome6</td>
+                <td>99</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+
+        <!--Essas tag são agrupamentos e o navegador entende isso. -->
+        
+    </table>
+    
+</body>
+</html>
