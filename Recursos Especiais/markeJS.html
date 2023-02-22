@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark e JS</title>
+</head>
+
+<body>
+    <h1>Tag Mark e JS</h1>
+
+    <input type="text" id="busca"><br>
+    <p id="descricao">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi, non nemo? Tempora ex
+        consequatur, repellendus dolores at dolorem minus sed, quis porro quidem magni iste cumque voluptas libero culpa
+        odio?
+        Autem cumque, repellat illo nihil maiores distinctio rem dolorum excepturi qui possimus praesentium quam laborum
+        cupiditate ex dolor quidem omnis fugit at aspernatur. Obcaecati molestiae aperiam tempore, ipsum ut ullam.
+        Nobis suscipit optio nulla esse laboriosam! Quasi modi dolorum, voluptatum, corporis quaerat quod aut odio fugit
+        animi error labore corrupti neque non consequuntur tempora ut? Fugiat totam tempora mollitia modi!</p>
+
+        <script>
+
+            var searchField = document.getElementById('busca');
+            var descricaobusca = document.getElementById('descricao');
+            var textDaBusca = descriptionObject.innerHTML;
+            
+            function realizaBusca(busca){
+                const regex = new RegExp('(${busca})(?!(.(?!<mark))*</mark>)+', 'ig');
+                const ocurrences = textDaBusca.match(regex);
+                descricaoObj.innerHTML = textDaBusca.replace(regex, '<mark>${busca}</mark>')
+            
+            }
+            
+            searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+            
+            
+            </script>
+</body>
+
+
+
+</html>
