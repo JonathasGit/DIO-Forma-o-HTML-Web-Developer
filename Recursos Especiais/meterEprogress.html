@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e Progress</title>
+</head>
+<body>
+    <h1>Tag Meter e Progress</h1>
+    
+    <meter></meter>
+
+    <progress max="100" min="0" value="50" id="progress"></progress><br>
+    <progress max="100" min="0" value="0" id="progresso1"></progress><br>
+
+    <script>
+        var progress = document.getElementById('progress');
+        progress.value = 80;
+
+
+        //Intervalo subindo até 100%
+        var progress = document.getElementById('progresso1');
+        const interval = setInterval( () => {
+            progresso1.value += 10;
+            if(progresso1.value >= 100){
+                alert('Carregou')
+                clearInterval(interval);
+            }
+            
+        }, 100);
+       
+
+    </script>
+</body>
+</html>
